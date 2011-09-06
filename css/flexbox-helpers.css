@@ -1,0 +1,85 @@
+/* Flexbox-Helpers.css
+ * Helper classes to use with CSS3 Flexible Boxes
+ *
+ * http://richardshepherd.com
+ * @richardshepherd
+ *
+ * Keep your eye on the spec because these
+ * properties and values WILL change :)
+ * http://dev.w3.org/csswg/css3-flexbox/
+ * -------------------------------------------- */
+
+.boxHorizontal {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: box; 
+	
+	-webkit-box-orient: horizontal; 
+	-moz-box-orient: horizontal; 
+	box-orient: horizontal;
+}
+
+.boxVertical {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: box; 
+	
+	-webkit-box-orient: vertical; 
+	-moz-box-orient: vertical; 
+	box-orient: vertical;
+}
+
+.boxFlex, 
+.boxFlex1 { -webkit-box-flex: 1; -moz-box-flex: 1; box-flex: 1; }
+.boxFlex2 { -webkit-box-flex: 2; -moz-box-flex: 2; box-flex: 2; }
+.boxFlex3 { -webkit-box-flex: 3; -moz-box-flex: 3; box-flex: 3; }
+.boxFlex4 { -webkit-box-flex: 4; -moz-box-flex: 4; box-flex: 4; }
+
+.boxStart {
+	-webkit-box-pack: start;
+	-moz-box-pack: start;
+	box-pack: start;
+}
+ 
+.boxEnd {
+	-webkit-box-pack: end;
+	-moz-box-pack: end;
+	box-pack: end;
+}
+ 
+.boxCentered {
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+}
+ 
+
+/* Additional Classes written by/adapted from Alex Russell's great work
+ * http://infrequently.org/2009/08/css-3-progress/
+ * -----------------------------------------------*/
+
+.boxHorizontal > *,
+.boxVertical > * {
+	-webkit-box-flex: 0;
+	-moz-box-flex: 0;
+	box-flex: 0;
+	display: block;
+}
+
+.spacer {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+}
+  
+.boxGroup1 {
+	-webkit-box-flex-group: 1;
+	-moz-box-flex-group: 1;
+	box-flex-group: 1;
+}
+ 
+.boxGroup2 {
+	-webkit-box-flex-group: 2;
+	-moz-box-flex-group: 2;
+	box-flex-group: 2;
+}
